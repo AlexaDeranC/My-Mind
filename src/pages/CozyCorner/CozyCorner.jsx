@@ -2,11 +2,10 @@ import React, { useEffect, useRef, useState } from 'react';
 import styles from './CozyCorner.module.css';
 
 const asmrSounds = {
-  rain: '/cozycorner/asmr/rain.mp3',
-  firewood: '/cozycorner/asmr/firewood.mp3',
-  night: '/cozycorner/asmr/night.mp3',
+  rain: import.meta.env.BASE_URL + 'cozycorner/asmr/rain.mp3',
+  firewood: import.meta.env.BASE_URL + 'cozycorner/asmr/firewood.mp3',
+  night: import.meta.env.BASE_URL + 'cozycorner/asmr/night.mp3',
 };
-
 
 const CozyCorner = () => {
   const videoRef = useRef(null);
@@ -80,7 +79,7 @@ const CozyCorner = () => {
       {/* Background Video */}
       <video
         ref={videoRef}
-        src="/cozycorner/video/lofi-loop.mp4"
+        src={import.meta.env.BASE_URL + 'cozycorner/video/lofi-loop.mp4'}
         autoPlay
         loop
         muted
@@ -96,7 +95,7 @@ const CozyCorner = () => {
       />
 
       {/* Audio Elements */}
-      <audio ref={lofiAudioRef} src="/cozycorner/audio/lofi-track.mp3" loop />
+      <audio ref={lofiAudioRef} src={import.meta.env.BASE_URL + 'cozycorner/audio/lofi-track.mp3'} loop />
       {Object.entries(asmrSounds).map(([key, src]) => (
         <audio key={key} ref={asmrAudioRefs[key]} src={src} loop />
       ))}
