@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
+
+:root {
+  --background-color: #FAF3E0;       /* soft warm cream */
+  --text-color: #5C3A21;             /* rich chestnut brown */
+  --card-bg: #D7E4C9;                /* light moss green */
+  --card-hover-bg: #F7CFC2;          /* soft peachy hover */
+  --button-bg: #E99A85;              /* muted coral */
+  --button-hover-bg: #F7CFC2;        /* lighter peach */
+  --happy-bg: #FBE8A6;               /* warm golden yellow */
+  --happy-text: #7A5901;             /* dark amber */
+  --sad-bg: #B7CADB;                 /* muted soft blue-gray */
+  --sad-text: #3C4560;               /* darker blue-gray */
+}
+

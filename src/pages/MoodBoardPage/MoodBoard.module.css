@@ -1,0 +1,173 @@
+.moodContainer {
+  padding: 2rem;
+  text-align: center;
+  background-color: #FAF3E0; /* warm cream */
+  min-height: 100vh;
+  font-family: 'Delius Swash Caps', cursive;
+  color: #5C3A21; /* chestnut brown */
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #7A5901; /* dark amber */
+}
+
+.primaryEmotions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.primaryBtn {
+  border: none;
+  border-radius: 2rem;
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 120px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+  background-color: #F7CFC2; /* soft peach */
+  color: #5C3A21; /* chestnut brown */
+}
+
+.primaryBtn:hover {
+  transform: scale(1.05);
+  background-color: #BC6C25; /* terracotta */
+  color: #fff;
+}
+
+.active {
+  box-shadow: 0 0 10px rgba(188, 108, 37, 0.7);
+  color: #fff !important;
+}
+
+.moodGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+}
+
+.moodBtn {
+  border: none;
+  border-radius: 1rem;
+  padding: 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+  background-color: #FAE6D4; /* pale warm cream */
+  color: #5C3A21; /* chestnut brown */
+}
+
+.moodBtn:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.selected {
+  box-shadow: 0 0 8px rgba(188, 108, 37, 0.7);
+  font-weight: 600;
+  color: #5C3A21 !important;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #BC6C25; /* terracotta */
+}
+
+.calendarGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+}
+
+.dayLabel {
+  font-weight: 700;
+  padding: 0.5rem 0;
+  border-radius: 6px;
+  background-color: #FAE6D4; /* pale warm cream */
+  color: #5C3A21; /* chestnut brown */
+  user-select: none;
+}
+
+.calendarCell {
+  border: none;
+  border-radius: 8px;
+  width: 90px;
+  height: 90px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  transition: box-shadow 0.2s ease, background-color 0.3s ease;
+  cursor: pointer;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  text-align: center;
+}
+
+.calendarCell:hover {
+  box-shadow: 0 0 10px rgba(188, 108, 37, 0.5);
+}
+
+.dayNumber {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #5C3A21;
+}
+
+.moodText {
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-top: 0.25rem;
+  white-space: normal;
+  overflow-wrap: break-word;
+  color: #5C3A21;
+}
+
+.confirmation {
+  font-size: 1.1rem;
+  color: #5C3A21;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 2px solid #E99A85; /* muted coral */
+  background-color: #FAF3E0; /* warm cream */
+  color: #5C3A21;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+select:hover {
+  border-color: #BC6C25;
+}
+
+select:focus {
+  border-color: #BC6C25;
+  box-shadow: 0 0 5px #BC6C25aa;
+}
+
+option {
+  padding: 8px;
+  background-color: #FAF3E0;
+  color: #5C3A21;
+}

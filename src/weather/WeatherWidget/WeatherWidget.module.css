@@ -1,0 +1,64 @@
+.circleWidget {
+  width: 150px;
+  height: 200px;
+  background-color: #E99A85; 
+  color: #5C3A21; 
+  border-radius: 20px;
+  border: 2px solid #5C3A21;
+  box-shadow: 0 0 12px rgba(92, 58, 33, 0.08);
+  font-family: 'Delius Swash Caps', cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  transition: transform 0.2s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.circleWidget:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(188, 108, 37, 0.3); /* terracotta glow kept */
+  background-color: #F7CFC2; /* soft light peach hover */
+}
+
+.weatherSection,
+.moonSection {
+  min-height: 40px; /* stabilize vertical size */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0; /* reset margins */
+}
+
+.weatherIcon {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.temperature {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0.15rem 0;
+}
+
+.weatherText {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.moonLabel {
+  font-size: 0.75rem;
+  margin-bottom: 0.15rem;
+}
+
+.moonPhase {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.widgetWrapper {
+  margin-top: 2rem; /* adjust this value as you like */
+}

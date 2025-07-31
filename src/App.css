@@ -1,0 +1,272 @@
+/* App.css - Consolidated Theme System */
+
+/* =============== BASE STYLES =============== */
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.App {
+  background: transparent;
+}
+
+/* =============== THEME VARIABLES =============== */
+
+/* Base Light Mode */
+body.light {
+  --background-color: #fdf6ff;
+  --text-color: #443850;
+  --card-bg: #e0d9f3;
+  --card-hover-bg: #f7cdd0;
+  --button-bg: #f7cdd0;
+  --button-hover-bg: #c8b6ff;
+  --accent-shadow: rgba(192, 182, 255, 0.3);
+  
+  /* Profile Page specific variables */
+  --profile-bg: #fef9f4;
+  --profile-text: #4a3c31;
+  --profile-secondary: #5a4737;
+  --profile-border: #d6c7ad;
+  --profile-accent: #b78b4f;
+  --profile-section-bg: #fff6e8;
+  --profile-books-bg: #fff7e1;
+  --profile-shadow: rgba(115, 87, 60, 0.15);
+}
+
+/* Base Dark Mode */
+body.dark {
+  --background-color: #1e1b26;
+  --text-color: #f0eaff;
+  --card-bg: #2d263b;
+  --card-hover-bg: #443850;
+  --button-bg: #6a4c93;
+  --button-hover-bg: #b07bac;
+  --accent-shadow: rgba(106, 76, 147, 0.3);
+  
+  /* Profile Page specific variables */
+  --profile-bg: #2a2017;
+  --profile-text: #e8dcc6;
+  --profile-secondary: #d4c4a8;
+  --profile-border: #4a3f2f;
+  --profile-accent: #8b6914;
+  --profile-section-bg: #3a2f1f;
+  --profile-books-bg: #342914;
+  --profile-shadow: rgba(0, 0, 0, 0.4);
+}
+
+/* =============== EMOTION-BASED THEME VARIATIONS =============== */
+
+/* Light Mode Emotions */
+body.light.happy {
+  --background-color: #fff8e7;
+  --card-bg: #fff3c4;
+  --text-color: #6b5b17;
+  --button-bg: #f6e0a7;
+  --button-hover-bg: #dfc874;
+  --accent-shadow: rgba(246, 224, 140, 0.3);
+}
+
+body.light.sad {
+  --background-color: #c6d3e1;
+  --card-bg: #b8c9d9;
+  --text-color: #2f4056;
+  --button-bg: #95a9c3;
+  --button-hover-bg: #7e93b1;
+  --accent-shadow: rgba(155, 175, 207, 0.3);
+}
+
+body.light.anger {
+  --background-color: #f4ccc6;
+  --card-bg: #efb9b1;
+  --text-color: #6a2a23;
+  --button-bg: #d9827a;
+  --button-hover-bg: #bb655e;
+  --accent-shadow: rgba(244, 204, 198, 0.3);
+}
+
+body.light.fear {
+  --background-color: #d6e8e0;
+  --card-bg: #c2dbd5;
+  --text-color: #3c5543;
+  --button-bg: #a4c1b0;
+  --button-hover-bg: #7d9c87;
+  --accent-shadow: rgba(195, 219, 206, 0.3);
+}
+
+body.light.surprise {
+  --background-color: #fbeedb;
+  --card-bg: #f8e3c8;
+  --text-color: #6a5a46;
+  --button-bg: #d7b687;
+  --button-hover-bg: #bb9f72;
+  --accent-shadow: rgba(251, 238, 219, 0.3);
+}
+
+/* Dark Mode Emotions */
+body.dark.happy {
+  --background-color: #3e3a2e;
+  --card-bg: #5a533f;
+  --text-color: #f2e9d4;
+  --button-bg: #71673c;
+  --button-hover-bg: #9c9450;
+  --accent-shadow: rgba(255, 245, 179, 0.3);
+}
+
+body.dark.sad {
+  --background-color: #3a4151;
+  --card-bg: #55617a;
+  --text-color: #d1d9e6;
+  --button-bg: #7282a3;
+  --button-hover-bg: #8998bb;
+  --accent-shadow: rgba(174, 190, 219, 0.3);
+}
+
+body.dark.anger {
+  --background-color: #5c3932;
+  --card-bg: #7a504b;
+  --text-color: #e8c4be;
+  --button-bg: #a26157;
+  --button-hover-bg: #bc7a72;
+  --accent-shadow: rgba(231, 173, 164, 0.3);
+}
+
+body.dark.fear {
+  --background-color: #344039;
+  --card-bg: #567062;
+  --text-color: #c3dbce;
+  --button-bg: #729776;
+  --button-hover-bg: #8fae94;
+  --accent-shadow: rgba(195, 219, 206, 0.3);
+}
+
+body.dark.surprise {
+  --background-color: #503f35;
+  --card-bg: #7a6555;
+  --text-color: #e5d9cc;
+  --button-bg: #a38b6c;
+  --button-hover-bg: #b8a27a;
+  --accent-shadow: rgba(251, 238, 219, 0.3);
+}
+
+/* =============== GLOBAL STYLES =============== */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+  font-family: 'Delius Swash Caps', cursive;
+  min-height: 100vh;
+}
+
+#root {
+  background: transparent;
+  min-height: 100vh;
+}
+
+/* =============== COMPONENT STYLES =============== */
+
+button {
+  background-color: var(--button-bg);
+  color: var(--text-color);
+  border: none;
+  border-radius: 12px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+button:hover {
+  background-color: var(--button-hover-bg);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px var(--accent-shadow);
+}
+
+.toggleBtn {
+  padding: 0.5rem 1.2rem;
+  background-color: var(--button-bg);
+  color: var(--text-color);
+  border: 2px solid transparent;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px var(--accent-shadow);
+}
+
+.toggleBtn:hover {
+  background-color: var(--button-hover-bg);
+  border-color: var(--text-color);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px var(--accent-shadow);
+}
+
+/* =============== CARD STYLES =============== */
+
+.card {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px var(--accent-shadow);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  background-color: var(--card-hover-bg);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px var(--accent-shadow);
+}
+
+/* =============== TYPOGRAPHY =============== */
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-color);
+  font-family: 'Delius Swash Caps', cursive;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 2.4em;
+  line-height: 1.2;
+}
+
+/* =============== LOGO ANIMATIONS =============== */
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}

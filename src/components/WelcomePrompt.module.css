@@ -1,0 +1,82 @@
+.welcome-prompt-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(96, 108, 131, 0.85); /* semi-transparent secondary background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* overlay on top */
+}
+
+.welcome-prompt {
+  background-color: #FEFAE0; /* primary background */
+  padding: 2.5rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  font-family: 'Delius Swash Caps', cursive;
+  color: #283618; /* primary text */
+}
+
+.welcome-prompt h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.welcome-prompt label {
+  display: block;
+  text-align: left;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #283618;
+}
+
+.welcome-prompt input[type="text"],
+.welcome-prompt input[type="date"] {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 1.25rem;
+  border: 2px solid #606C83; /* secondary background as border */
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #283618;
+  background-color: #FEFAE0;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.welcome-prompt input[type="text"]:focus,
+.welcome-prompt input[type="date"]:focus {
+  border-color: #DDA15E; /* primary accent on focus */
+  outline: none;
+}
+
+.welcome-prompt button {
+  background-color: #DDA15E; /* primary accent */
+  color: #FEFAE0; /* primary background as text for contrast */
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: inherit;
+}
+
+.welcome-prompt button:hover {
+  background-color: #BC6C25; /* secondary accent on hover */
+}
+
+.welcome-prompt button:focus {
+  outline: 3px solid #CAA0C3; /* tertiary pop color as focus ring */
+  outline-offset: 2px;
+}

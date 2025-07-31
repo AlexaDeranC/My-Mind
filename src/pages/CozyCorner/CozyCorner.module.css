@@ -1,0 +1,67 @@
+.cozyCornerContainer {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.backgroundVideo {
+  position: fixed;  /* Ensures it stays full screen and behind everything */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Controls container should sit above the video */
+.controls {
+  position: relative;
+  z-index: 10;
+  padding: 2rem;
+  text-align: center;
+  color: var(--text-color);
+  font-family: 'Delius Swash Caps', cursive;
+}
+
+/* Control buttons */
+/* Controls container sits above the video */
+.controls {
+  position: relative;
+  z-index: 10;
+  padding: 2rem;
+  text-align: center;
+  color: #f0eaff; /* Brighter, light lavender/white */
+  font-family: 'Delius Swash Caps', cursive;
+  text-shadow: 0 0 8px rgba(240, 234, 255, 0.8); /* subtle glow */
+}
+
+/* Control buttons */
+.controlBtn {
+  margin: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: rgba(106, 76, 147, 0.8); /* semi-transparent purple */
+  color: #f0eaff; /* bright text */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 5px rgba(106, 76, 147, 0.6);
+}
+
+.controlBtn:hover {
+  background-color: rgba(176, 123, 172, 0.9); /* lighter purple on hover */
+  box-shadow: 0 0 12px rgba(176, 123, 172, 0.9);
+}
+
+.activeBtn {
+  border: 2px solid #f0eaff; /* bright border */
+  box-shadow: 0 0 10px #f0eaff;
+}
+
+/* ASMR controls */
+.asmrControls {
+  margin-top: 1rem;
+}

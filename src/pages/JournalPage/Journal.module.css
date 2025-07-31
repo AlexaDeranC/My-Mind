@@ -1,0 +1,183 @@
+.journalPage {
+  padding: 2rem;
+  font-family: 'Delius Swash Caps', cursive;
+  background-color: #FAF3E0; 
+  min-height: 100vh;
+  color: #5C3A21; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topBar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.newEntryBtn {
+  background-color: #BC6C25; 
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newEntryBtn:hover {
+  background-color: #a65a1f; 
+}
+
+.promptBox {
+  background-color: #FFF8E7; 
+  border: 2px dashed #E4CAA1;
+  padding: 1rem 2rem;
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #5C3A21;
+}
+
+.entryBox {
+  width: 100%;
+  max-width: 600px;
+  min-height: 150px;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 2px solid #CAA0C3; 
+  border-radius: 16px;
+  resize: vertical;
+  background-color: #fff;
+  color: #5C3A21;
+  margin-bottom: 1.5rem;
+}
+
+.bottomBar {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 2rem;
+}
+
+.submitBtn {
+  background-color: #A5A58D; 
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitBtn:hover {
+  background-color: #8d8d77; 
+}
+
+.entriesContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+.entryCover {
+  border-radius: 16px;
+  padding: 1rem;
+  min-height: 100px;
+  color: #5C3A21;
+  box-shadow: 0 4px 8px rgba(92, 58, 33, 0.1); 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 0.9rem;
+  transition: transform 0.3s ease;
+}
+
+.entryCover:hover {
+  transform: scale(1.03);
+}
+
+.moodSelector {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.moodSelector label {
+  font-size: 1.1rem;
+  margin-right: 0.5rem;
+  color: #5C3A21;
+}
+
+.moodSelector select {
+  font-size: 1rem;
+  padding: 0.4rem 1rem;
+  border-radius: 12px;
+  border: 2px solid #BC6C25; 
+  background-color: #fff;
+  color: #5C3A21;
+  transition: border-color 0.3s ease;
+}
+
+.moodSelector select:focus {
+  border-color: #a65a1f; 
+  outline: none;
+}
+
+.seeAllContainer {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.seeAllBtn {
+  background-color: #BC6C25;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.seeAllBtn:hover {
+  background-color: #a65a1f; 
+}
+
+
+.promptSection {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 1rem;
+}
+
+.promptBox {
+  flex: 1;
+}
+
+.newPromptBtn {
+  padding: 8px 12px;
+  background:#BC6C25;
+  color: var(--text-color);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+  font-family: 'Delius Swash Caps', cursive; 
+}
+
+.newPromptBtn:hover {
+  background:#a65a1f;
+  color: #fff;
+}

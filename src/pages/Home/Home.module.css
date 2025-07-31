@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
+
+:root {
+  --background-color: #FAF3E0;       /* soft warm cream */
+  --text-color: #5C3A21;             /* rich chestnut brown */
+  --card-bg: #D7E4C9;                /* light moss green */
+  --card-hover-bg: #F7CFC2;          /* soft peachy hover */
+  --button-bg: #E99A85;              /* muted coral */
+  --button-hover-bg: #F7CFC2;        /* lighter peach */
+  --happy-bg: #FBE8A6;               /* warm golden yellow */
+  --happy-text: #7A5901;             /* dark amber */
+  --sad-bg: #B7CADB;                 /* muted soft blue-gray */
+  --sad-text: #3C4560;               /* darker blue-gray */
+}
+
+.greeting h2 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin: 1rem 0;
+  font-family: 'Delius Swash Caps', cursive;
+  text-align: center;
+}
+
+.homeContainer {
+  padding-bottom: 80px;
+  margin-top: 0;
+  text-align: left;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Emotion state classes */
+.happy {
+  background-color: var(--happy-bg);
+  color: var(--happy-text);
+}
+
+.sad {
+  background-color: var(--sad-bg);
+  color: var(--sad-text);
+}
+
+.neutral {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 1rem 0;
+}
+
+.moonImage {
+  width: 75px;
+  height: auto;
+}
+
+.appTitle {
+  font-family: 'Delius Swash Caps', cursive;
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+  background-image: url('../../assets/images/logo/stars.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  color: var(--text-color);
+}
+
+.starsImage {
+  width: 40px;
+  height: 40px;
+  display: block;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem;
+  background-color: var(--background-color);
+}
+
+.logoSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logoImage {
+  width: 80px;
+  height: auto;
+}
+
+.logoText {
+  font-family: 'Delius Swash Caps', cursive;
+  font-size: 2.2rem;
+  color: var(--text-color);
+}
+
+.taskRowLayout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.leftColumn,
+.centerColumn,
+.rightColumn {
+  flex: 1;
+}
+
+.centerColumn {
+  flex: 1.5;
+}
+
+.taskCard {
+  background-color: var(--card-bg);
+  border-radius: 20px;
+  padding: 18px 22px;
+  margin-bottom: 16px;
+  box-shadow: 0 6px 12px rgba(202, 181, 245, 0.25);
+  color: var(--text-color);
+  font-family: 'Delius Swash Caps', cursive;
+  font-size: 1.15rem;
+  border: 2px solid var(--text-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  cursor: default;
+}
+
+.taskCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 12px var(--button-bg), 0 0 20px var(--button-hover-bg);
+  background-color: var(--card-hover-bg);
+}
+
+.centerColumn h3,
+.rightColumn h3 {
+  color: var(--text-color);
+  font-weight: 700;
+  margin-bottom: 18px;
+  font-family: 'Delius Swash Caps', cursive;
+  font-size: 1.5rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.toggleBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.4rem 1rem;
+  background-color: var(--button-bg);
+  color: var(--text-color);
+  border: none;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggleBtn:hover {
+  background-color: var(--button-hover-bg);
+}

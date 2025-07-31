@@ -1,0 +1,68 @@
+.selectorContainer {
+  background: rgb(254, 253, 255);
+  border-radius: 20px;     
+  padding: 20px 30px;        
+  max-width: max-content;     
+  margin: 0 auto;             
+  box-shadow: #fac5b3; 
+  overflow-x: auto;           
+}
+
+.selector {
+  display: flex;
+  flex-wrap: nowrap;        
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 0;
+}
+
+
+.emotionBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.2s ease;
+  padding: 0;
+  position: relative;
+  border-radius: 50%;
+  background: transparent;
+
+ 
+}
+
+.emotionBtn:hover {
+  transform: scale(1.1);
+  background: rgb(254, 253, 255);
+
+}
+
+.emotionImg {
+  width: 60px;  
+  height: 60px; 
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid transparent;
+  display: block;
+  margin: 0 auto;
+  
+  box-shadow: inset 0 0 5px rgb(255, 255, 255);
+  background-color: transparent; 
+}
+
+.emotionLabel {
+  margin-top: 0.25rem;
+  font-family: 'Delius Swash Caps', cursive;
+  font-size: 0.85rem;
+  color: #6b5b8c; 
+  user-select: none;
+}
+
+
+.emotionBtn:focus,
+.emotionBtn:focus-visible,
+.emotionImg:focus,
+.emotionImg:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
